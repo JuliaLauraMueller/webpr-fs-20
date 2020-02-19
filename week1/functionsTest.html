@@ -7,47 +7,104 @@
 <body>
     <script>
 
-        // function fun1()    { return 1; }
+         document.writeln(1 !== 2);
+
+         function fun1()    { return 1; }
+
+         document.writeln( fun1()   === 1 );
+         document.writeln( fun1(42) === 1 );
+
+         function fun2()    { return 1; }
+         // Funktionsname wird nochmals definiert und überschrieben worden --> Funktion nur einmal definieren.
+         function fun2(arg) { return arg; }
+
+         document.writeln( fun2() !== 1  ); // fun2(arg) wird aufgerufen
+         document.writeln( fun2() === undefined ); // fun2(arg) wurde aufgerufen aber arg ist undefined
+         document.writeln( fun2(42) === 42 ); // Man gibt 42 mit und es returned 42
+         // document.writeln( fun2(42) === 1 );
+
+         // Funktions Key-Word Funktionen definieren
+         function noReturn()    { 1; } // Kein Return von der 1
+         const noReturn2 = () => { 1; }; // Zuweisung ist ein Statement, Referenz auf den Wert auf noReturn2
+         const noReturn3 = () => 1; // {} weglassen, dann ist es kein Statement mehr und returned 1
+
+         document.writeln( noReturn() !== 1 ); // Kein Return, daher ist es undefined. Statement ist undefined da kein Return.
+         document.writeln( noReturn2() !== 1 ); // Keine 1, der Wert in {} sind, daher ist es undefined. Wir brauchen ein Return
+         document.writeln( noReturn3() === 1 );
+
+         const myfun = fun1; // fun1 Typ Funktion
+         const funs = [null, undefined, fun1, fun2];
+
+         document.writeln( myfun() === 1 );
+         document.writeln( funs[2]() === 1 );
+
+
+         function doit(waszutunist) {
+             return function bla(arg)
+             { return waszutunist(arg) } // Ruft andere Funktion doit auf mit dem Parameter arg
+         }
+
+         document.writeln( doit(fun1)(10) === 1 ); // Argument mit Typ Funktion, gibt zurück. Ignoriert Wert 10 und gibt 1 zurück
+         document.writeln( doit(fun2)(10) === 10 ); // fun2 hat Argument welche übereinstimmen muss mit dem return-Wert von fun2
+
+         // Curried
+         const doit2 = (callme => (arg => callme(arg))); // doit2 macht das gleiche wie doit
+
+         document.writeln( doit2(fun1)(10) === 1 ); // Curried
+
+         const doFun2 = doit2(fun1); // Zuweisung einer Referenz. Fun1 ist gebunden.
+
+         document.writeln( doFun2(10) === 1 );
+         document.writeln( doFun2()   === 1 );
+
+
+         // Aufgabe 4 Lösung
+         const plus = x => y => x + y;
+
+         const x_ = Math.random();
+         const y_ = Math.random();
+         const plus3 = plus(3);
+         document.writeln("OK, Should be true: ");
+         document.writeln(plus(x_)(y_) === x_ + y_ && plus3(y_) === y_ + 3);
+
+
+        // const foo = true;
+        // document.writeln(foo());
         //
-        // document.writeln( fun1()   === 1 );
-        // document.writeln( fun1(42) === 1 );
+        //  function foo() {
+        //      return true;
+        //  }
+        //  document.writeln(foo);
         //
-        // function fun2()    { return 1; }
-        // function fun2(arg) { return arg; }
+        //  const foo = (x) => true;
+        //  document.writeln(foo());
         //
-        // document.writeln( fun2() !== 1  );
-        // document.writeln( fun2() === undefined );
-        // document.writeln( fun2(42) === 42 );
+        //  function foo(){
+        //      return true;
+        //  }
         //
-        // function noReturn()    { 1; }
-        // const noReturn2 = () => { 1; };
-        // const noReturn3 = () => 1;
+        //  document.writeln(foo());
         //
-        // document.writeln( noReturn() !== 1 );
-        // document.writeln( noReturn2() !== 1 );
-        // document.writeln( noReturn3() === 1 );
-        //
-        // const myfun = fun1;
-        // const funs = [null, undefined, fun1, fun2];
-        //
-        // document.writeln( myfun() === 1 );
-        // document.writeln( funs[2]() === 1 );
-        //
-        // function doit(waszutunist) {
-        //     return function bla(arg) { return waszutunist(arg) }
+        //  const foo = () => true;
+        //  document.writeln(foo(1));
+
+
+        // function one(x) {
+        //     return x;
         // }
         //
-        // document.writeln( doit(fun1)(10) === 1 );
-        // document.writeln( doit(fun2)(10) === 10 );
+        // function two(x, y) {
+        //     return x + y;
+        // }
         //
-        // const doit2 = callme => arg => callme(arg) ;
+        // function three(x, y, z) {
+        //     return x + y + z;
+        // }
         //
-        // document.writeln( doit2(fun1)(10) === 1 );
-        //
-        // const doFun2 = doit2(fun1);
-        //
-        // document.writeln( doFun2(10) === 1 );
-        // document.writeln( doFun2()   === 1 );
+        // const functions = [null, one, two, three];
+        // //document.writeln(functions[1](1));
+        // //document.writeln(functions[2](1,1,1));
+        // document.writeln(functions[3](1,1));
 
     </script>
 </body>
