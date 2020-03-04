@@ -10,10 +10,9 @@
         // das ist Variable id
         const id = x => x;
         const fst = x => y => x; // Funktion fst bekommt y die das x entgegen nimmt
+        const one = fst(1); // definieren von vorherigen Funktionen
 
-        const one = fst(1);
-
-        document.writeln( one(null) === 1 );
+        document.writeln( one(null) === 1) // Gibt immer 1 zurück
 
         // const snd = x => y => id(y); // bekommt x und y, Rauskürzen von y => y? Mit Identititäsfunktion id
         // const snd = x => fst(id)(x); // Reduktion von Eta y kürzen
@@ -23,11 +22,8 @@
         document.writeln( fst(id)("bla") === id )
         document.writeln( fst(id)(null) === id )
         document.writeln( snd(id)(id) === id )
+        document.writeln("Kein Test:")
         document.writeln( snd(id)(id) === id )
-
-        const one = fst(1); // definieren von vorherigen Funktionen
-
-        document.writeln( one(null) === 1) // Gibt immer 1 zurück
 
 
         // document.writeln( "Test1:")
@@ -61,12 +57,12 @@
         //     document.writeln(false)
         // }
 
-        document.writeln( "Test4:")
-
-        const x_ = Math.random();
-        const y_ = Math.random();
-        // snd(x_)(y_) === y_
-        document.writeln(snd(x_)(y_) === y_);
+        // document.writeln( "")
+        //
+        // const x_ = Math.random();
+        // const y_ = Math.random();
+        // // snd(x_)(y_) === y_
+        // document.writeln(snd(x_)(y_) === y_);
 
     </script>
 </body>

@@ -1,4 +1,37 @@
 
+const id = x => x;
+// nimmt x entgegen und y und gibt x zurück
+const fst = x => y => x; // wählt das x aus
+const snd = x => y => y; // wählt das y aus
+const M = f => f (f); // Mockingbird ist die Self-Applikation
+
+// nimmt x entgegen und y und gibt zurück den ersten Wert. Beta-Reduktion anwenden
+const konst = fst;
+
+// Booleans
+const T = first => second => first;
+const F = first => second => second;
+
+// const and = first => second => first(second(T)(F))(second(F)(F));
+const and = first => second => first ( second ) ( first );
+
+// const or = first => second => first (second (T) (T)) (second (T) (F));
+// const or = first => second => first ( first ) ( second ); // Beta-Reduktion
+// const or = first => M ( first ); // Beta-Reduktion
+const or =  M;
+
+const Pair = first => second => selctor => selctor(first)(second);
+const firstname = fst;
+const lastname = snd;
+
+// Test
+const pair = a => b => f => f(a)(b);
+const fst1 = p = p(T);
+const snd1 = p => p(F);
+
+const oneTwo = pair(1)(2);
+// fst1(oneTwo) = 0;
+document.writeln("Test Quiz 3: " + fst1(oneTwo) === 1);
 
 
 // ----- special -----

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Scope Tests</title>
+</head>
+<body>
+<script>
+    
+    const id = x => x;
+    // nimmt x entgegen und y und gibt x zurück
+    const fst = x => y => x; // wählt das x aus
+    const snd = x => y => y; // wählt das y aus
+    const M = f => f (f); // Mockingbird ist die Self-Applikation
+
+    // nimmt x entgegen und y und gibt zurück den ersten Wert. Beta-Reduktion anwenden
+    const konst = fst;
+
+    // Booleans
+    const T = first => second => first;
+    const F = first => second => second;
+
+    // const and = first => second => first(second(T)(F))(second(F)(F));
+    const and = first => second => first ( second ) ( first );
+
+    // const or = first => second => first (second (T) (T)) (second (T) (F));
+    // const or = first => second => first ( first ) ( second ); // Beta-Reduktion
+    // const or = first => M ( first ); // Beta-Reduktion
+    const or =  M;
+
+    const Pair = first => second => selctor => selctor(first)(second);
+    const firstname = fst;
+    const lastname = snd;
+
+    const pair = a => b => f => f(a)
+
+    // Test Quiz 3.1
+    const pair2 = a => b => f => f(a)(b);
+    const fst1 = p => p(T);
+    const snd1 = p => p(F);
+
+    const oneTwo = pair2(1)(2);
+    // fst1(oneTwo) = 0;
+    document.writeln("Test Quiz 3: " + fst1(oneTwo) === 1);
+
+    document.writeln("------------------------------");
+
+    // Test Quiz 3.2
+    const s1 = x => y => z => x;
+    const s2 = x => y => z => y;
+    const s3 = x => y => z => z;
+
+    const triple = x => y => z => f => f(x)(y)(z);
+    const a = t => t(s1);
+    const b = t => t(s2);
+    const c = t => t(s3);
+
+    // const person = triple;
+    // const firstname = a;
+    // const lastname = b;
+    // const age = c;
+
+    // const bran = person("Brendan");
+    // const raven = bran("Stark")(16);
+    // const eich = bran("Eich")(16);
+    const oneTwoThree = triple(1)(2)(3);
+
+    document.writeln("Test Quiz 3:");
+    document.writeln( a(oneTwoThree) === 1);
+
+
+    const Left = x => f => g => f(x);
+    const Right = x => f => g => g(x);
+    const either = e => f => g => e(f) (g);
+
+    const safeDiv = num => divisior =>
+        divisior === 0 ? Left("cannot divide by 0") : Right (num/divisior);
+
+    const result = safeDiv(1)(0);
+
+    document.writeln("Test Quiz 3.2:");
+    either(result) (msg => document.writeln(msg));
+    document.writeln("------------------------------");
+
+
+    // Test Q9c
+    // Given the function definitions from the lecture for 'either', 'Left', 'Right', 'id',
+    //                                                         and safeDiv as shown below,
+    //     provide a function 'eShow' that takes the result from safeDiv and
+    // returns either the error string (in case of division by 0)
+    // or otherwise the success message "Result is: " with the result appended.
+    //     Provided is:
+
+    // const Left   = x => f => g => f (x);
+    // const Right  = x => f => g => g (x);
+    // const either = e => f => g => e (f) (g);
+    // const id = x => x;
+
+    // Funktion
+
+    // const x_ = Math.random();
+    // const safeDiv = num => divisor =>
+    //     divisor === 0
+    //         ? Left  ("Cannot divide by 0")
+    //         : Right (num / divisor);
+    //
+    // eShow( safeDiv(1)(0))  === "Cannot divide by 0" && eShow( safeDiv(x_)(1)) === "Result is: "+x_
+
+</script>
+</body>
+</html>
+
+
+
