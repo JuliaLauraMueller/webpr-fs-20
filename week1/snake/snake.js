@@ -1,4 +1,4 @@
-
+// Werte für den Richtungsversatz
 const north = {dx:  0, dy: -1};
 const east  = {dx:  1, dy:  0};
 const south = {dx:  0, dy:  1};
@@ -25,7 +25,7 @@ function snakeEquals(a, b) {
 function changeDirection(orientation) {
     /* fill here */
     const changeDir = orientation.indexOf(direction);
-    direction = orientation[changeDir + 1]; // Soll sich ein Feld bewegen
+    direction = orientation[changeDir + 1]; // Soll sich ein Feld bewegen und Richtung ändern
 }
 
 function start() {
@@ -34,6 +34,7 @@ function start() {
 
     const rightArrow = 39;
     const leftArrow  = 37;
+    // Key-Listener
     window.onkeydown = evt => {
         const orientation = (evt.keyCode === rightArrow) ? clockwise : countercw;
         changeDirection(orientation);
@@ -69,7 +70,7 @@ function nextBoard() {
         snake.pop();
     }
 
-    /* fill here */; // put head at front of the list
+    /* fill here */; // put head at front of the list, opposite of shift()
     snake.unshift(head);
 }
 
