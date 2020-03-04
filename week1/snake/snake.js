@@ -17,7 +17,7 @@ let snake = [
 ];
 let food = {x: 15, y: 15};
 
-function snakeEquals(a, b) { 
+function snakeEquals(a, b) {
 	/* fill here */
     return a.x === b.x && a.y === b.y;
 }
@@ -84,7 +84,7 @@ function display(context) {
         fillBox(context, element)
     );
     context.fillStyle = "green";
-    fillBox(context, snake[0]);
+    fillBox(context, snake[0]);s
     // draw food
     context.fillStyle = "red";
     fillBox(context, food);

@@ -11,6 +11,10 @@
         const id = x => x;
         const fst = x => y => x; // Funktion fst bekommt y die das x entgegen nimmt
 
+        const one = fst(1);
+
+        document.writeln( one(null) === 1 );
+
         // const snd = x => y => id(y); // bekommt x und y, Rauskürzen von y => y? Mit Identititäsfunktion id
         // const snd = x => fst(id)(x); // Reduktion von Eta y kürzen
         const snd =  fst(id); // Nochmals kürzen mit eta
