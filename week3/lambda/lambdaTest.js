@@ -12,15 +12,15 @@ ok.push( konst(42)(0) === 42 ); // Curried style: Sukzessive Anwenden von Funkti
 ok.push( konst(42)(1) === 42 );
 ok.push( konst(42)(null) === 42 );
 //
-// // kite
+// kite
 ok.push( snd(null)(42) === 42 );
 //
 // // true
-//
 ok.push( T(1)(0) === 1 );
 ok.push( F(1)(0) === 0 );
 //
-// // and
+
+// and
 ok.push( and(F)(F) === F );
 ok.push( and(T)(F) === F );
 ok.push( and(F)(T) === F );
@@ -40,7 +40,7 @@ ok.push( or(T)(T) === T );
 // // beq
 //
 // // Pair
-//
+
 const dierk = Pair("Dierk")("König"); // immutable
 ok.push( dierk(firstname) === "Dierk");
 ok.push( dierk(lastname)  === "König");
