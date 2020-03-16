@@ -1,9 +1,4 @@
 const id = x => x;
-const fst = x => y => x;
-const snd = x => y => y;
-const M   = f => f (f);
-
-const id = x => x;
 // nimmt x entgegen und y und gibt x zurück
 const fst = x => y => x; // wählt das x aus
 const snd = x => y => y; // wählt das y aus
@@ -30,25 +25,18 @@ const lastname = snd;
 
 // Test
 const pair = a => b => f => f(a)(b);
-const fst1 = p = p(T);
+const fst1 = p => p(T);
 const snd1 = p => p(F);
 
 const oneTwo = pair(1)(2);
 // fst1(oneTwo) = 0;
 document.writeln("Test Quiz 3: " + fst1(oneTwo) === 1);
 
-const konst = fst;
+// either
+const Left = x => f => g => f(x); // Ruft den ersten Fall auf
+const Right = x => f => g => g(x); // Ruft den zweiten Fall auf
+const either = e => f => g => e(f)(g);
 
-
-const T = first => second => first;
-const F = first => second => second;
-
-const and = first => second => first ( second ) ( first );
-const or  = M ;
-
-const Pair = first => second => selector  => selector (first) (second);
-const firstname = fst;
-const lastname  = snd;
 
 // ----- special -----
 
