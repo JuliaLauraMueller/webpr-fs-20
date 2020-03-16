@@ -1,6 +1,5 @@
 // requires lambda.js
 
-
 let ok = [];
 
 // id
@@ -76,7 +75,6 @@ const safeDiv = num => divisor =>
 either( safeDiv(1)(1)  ) // Ergebniss von safeDiv umgehen sollen
       (errormsg => console.error(errormsg))
       (result => console.log(result));
-
 //
 // const [Cash, CreditCard, Invoice, PayPal, pay] = Choice(4);
 // const cash = Cash ();

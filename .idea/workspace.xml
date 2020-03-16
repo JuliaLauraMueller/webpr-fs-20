@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b594a230-b09a-493a-b8b2-bca1c7ddf65c" name="Default Changelist" comment="created Quiz.html file for week 3">
-      <change afterPath="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/AllTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/excel/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/excel/excel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/excel/excelTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/excel/excel_solution/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/excel/excel_solution/excel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/excel/excel_solution/excelTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/function/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/function/functionTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/lambda/lambda.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/lambda/lambdaTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/plotter/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/plotter/plotter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/plotter/plotterTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/snake/Snake.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/snake/snake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/snake/snakeTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week3/lambda/lambda.js" beforeDir="false" afterPath="$PROJECT_DIR$/week3/lambda/lambda.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week3/lambda/lambdaTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/week3/lambda/lambdaTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week4/AllTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/week4/AllTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week4/lambda/lambda.js" beforeDir="false" afterPath="$PROJECT_DIR$/week4/lambda/lambda.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week4/lambda/lambdaTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/week4/lambda/lambdaTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week4/snake/snake.js" beforeDir="false" afterPath="$PROJECT_DIR$/week4/snake/snake.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week4/snake/snakeTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/week4/snake/snakeTest.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week4/lambda/lambdaQuiz.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="337">
@@ -50,8 +68,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week3/lambda/lambdaTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="75" selection-start-line="75" selection-end-line="77" selection-end-column="38" />
+            <state relative-caret-position="197">
+              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week4/snake/snakeTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -60,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/week3/lambda/lambda.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -85,10 +112,10 @@
         <option value="$PROJECT_DIR$/week3/ball/ball.js" />
         <option value="$PROJECT_DIR$/week2/ball/ball.js" />
         <option value="$PROJECT_DIR$/week3/lambda/lambda.js" />
-        <option value="$PROJECT_DIR$/week3/lambda/lambdaTest.js" />
         <option value="$PROJECT_DIR$/week4/AllTests.html" />
-        <option value="$PROJECT_DIR$/week4/snake/snakeTest.js" />
         <option value="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" />
+        <option value="$PROJECT_DIR$/week3/lambda/lambdaTest.js" />
+        <option value="$PROJECT_DIR$/week4/snake/snakeTest.js" />
       </list>
     </option>
   </component>
@@ -260,7 +287,7 @@
       <workItem from="1583788913670" duration="533000" />
       <workItem from="1583831467043" duration="1341000" />
       <workItem from="1583911187992" duration="7359000" />
-      <workItem from="1584363719813" duration="205000" />
+      <workItem from="1584363719813" duration="491000" />
     </task>
     <task id="LOCAL-00001" summary="solved snake-game">
       <created>1582140952691</created>
@@ -280,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32854000" />
+    <option name="totallyTimeSpent" value="33140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -294,8 +321,8 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85504586" visible="true" weight="0.24232633" />
-      <window_info id="Structure" order="1" sideWeight="0.14495413" side_tool="true" visible="true" weight="0.24232633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85393256" visible="true" weight="0.24232633" />
+      <window_info id="Structure" order="1" sideWeight="0.14606741" side_tool="true" visible="true" weight="0.24232633" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -307,7 +334,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.2291372" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.11881188" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -466,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week4/snake/snakeTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week4/snake/snake.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -487,17 +507,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week3/lambda/lambdaTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" selection-start-line="75" selection-end-line="77" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week3/lambda/lambda.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
@@ -505,6 +518,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="111" column="4" selection-start-line="111" selection-start-column="4" selection-end-line="111" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/lambda/lambdaTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week4/snake/snakeTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
