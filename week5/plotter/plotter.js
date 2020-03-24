@@ -10,6 +10,14 @@ function start() {
     const context      = canvas.getContext("2d");
 
     // todo: how to display?
+    // Function --> return needs a blank 'return '
+    const f = Function('x', 'return ' + userFunction.value);
+    display(context, f);
+    userFunction.onchange = text => display(context, f);
+
+    // eval()
+    //display(context, x => eval(userFunction.value));
+    //userFunction.onchange = text => display(context, x => eval (userFunction.value));
 
 }
 
@@ -32,6 +40,7 @@ function display(context, f) {
     }
 }
 
+// umwandeln Koordinatensystem zu einem Rechteckigen Plotter x und y
 const normalizeY = height => y => {
     let scaleFactor = height / (maxY - minY);
     return height - (y - minY) * scaleFactor;

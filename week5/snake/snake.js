@@ -22,7 +22,7 @@ let food = pair(15)(15);
 // function snakeEquals(a, b) { return a.x === b.x && a.y === b.y }
 const pairEq = a => b =>  fst(a) === fst(b) && snd(a) === snd(b);
 
-// Pair + Pair = Pair        // Monoid
+// Pair + Pair = Pair        // Monoid, sind immutable
 const pairPlus = a => b =>  pair (fst(a) + fst(b)) (snd(a) + snd(b));
 
 // Funktion und Pair = Pair  // Functor
@@ -42,13 +42,12 @@ function safeGetElementById(id) {
            : Right (result)
 }
 
-const log = s => console.log(s);
+const log = s => console.log(s); // Fehlermeldung
 
 function start() {
-
-    either (safeGetElementById("canvas"))
-           (log)
-           (startWithCanvas);
+     safeGetElementById("canvas")
+           (log) // Zwei Funktionen angeben, Hier erste
+           (startWithCanvas); // Zweite Funktion
 }
 
 const startWithCanvas = canvas => {
