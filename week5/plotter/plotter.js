@@ -18,7 +18,6 @@ function start() {
     // eval()
     //display(context, x => eval(userFunction.value));
     //userFunction.onchange = text => display(context, x => eval (userFunction.value));
-
 }
 
 function display(context, f) {
