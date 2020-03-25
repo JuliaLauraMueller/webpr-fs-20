@@ -14,7 +14,7 @@
         this.firstname = first;
         this.lastname = last;
         this.getName = function() { return this.firstname + " "  + this.lastname };
-        return this;
+        return this; // ist immer das gleiche Objekt wenn man kein new macht zurückgegeben
     }
 
     // remember: calling a function retains the scope
@@ -49,6 +49,7 @@
 ( () => {
     let ok = [];
 
+    // Open, dynamic
     const good = {
         firstname : "Good",
         lastname  : "Boy",
@@ -71,6 +72,7 @@
         accessor : good.getName  // when we store a reference elsewhere
     };
     ok.push(store.accessor()  === "undefined undefined"); // OOPS!
+    // This referenziert den Reciever also den Store, er hat kein Last und Firstname
 
 
     report("object-literal", ok);
@@ -114,6 +116,7 @@
 ( () => {
     let ok = [];
 
+    // Closed, explicit
     function Person(first, last) {
         let firstname = first;
         let lastname  = last;
@@ -142,6 +145,7 @@
 ( () => {
     let ok = [];
 
+    // Closed, explicit
     function Person(first, last) {
         let firstname = first;      // optional, see distinct2
         let lastname  = last;
@@ -160,6 +164,7 @@
     ok.push(good.getName() === "changed");  // change one instance doesn't change the other
     ok.push(bad.getName()  === "Bad Boy" );
 
+    // use of prototype --> Konstruktorfunktion bekommt Prototype
     ok.push(! Person.prototype.isPrototypeOf(good)); // they do not even share the same prototype
     ok.push(! Person.prototype.isPrototypeOf(bad));
 
@@ -174,6 +179,7 @@
 ( () => {
     let ok = [];
 
+    // Mixed, classified
     function Person(first, last) { // closure scope for arguments
         return {
             getName   : function() { return first + " "  + last }
@@ -206,27 +212,36 @@
     let ok = [];
 
     const Person = ( () => {                // lexical scope for construction
-        function Person(first, last) {      // constructor, setting up the binding
+        function Person(first, last, age) {      // constructor, setting up the binding
             this.firstname = first;
             this.lastname  = last;
+            this.age       = age;
         }
         Person.prototype.getName = function() {  // functions are shared through the prototype // "=>" not allowed!
             return this.firstname + " " + this.lastname;
         };
-        return Person;
+        Person.prototype.getAge = function() { // shared through prototype
+            return this.age;
+        }
+        return Person; // Return ConstructorFunction
     }) (); // IIFE
 
-    const good = new Person("Good", "Boy");    // now it requires "new"
-    const bad  = new Person("Bad", "Boy");     // distinct new instance
+    const good = new Person("Good", "Boy", 30);    // now it requires "new" --> get new Person-Object
+    const bad  = new Person("Bad", "Boy", 25);     // distinct new instance
 
     ok.push(good.getName() === "Good Boy");    // without "new" it throws TypeError
     ok.push(bad.getName()  === "Bad Boy" );
+    ok.push(good.getAge() === 30);
 
     ok.push(good.firstname === "Good");        // the function scope is still accessible for manipulation
+    ok.push(good.age === 30);
 
     good.getName = () => "changed";
     ok.push(good.getName() === "changed");  // one can still change a single instance
     ok.push(bad.getName()  === "Bad Boy" );
+
+    good.getAge = () => 20; // change value of age
+    ok.push(good.getAge() === 20);
 
     ok.push(Person.prototype.isPrototypeOf(good)); // Now they share the same prototype
     ok.push(Person.prototype.isPrototypeOf(bad));

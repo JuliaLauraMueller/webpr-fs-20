@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Scope Tests</title>
+</head>
+<body>
+<script>
+
+   //Test 10
+    document.writeln("------------------------------");
+
+    // function Empty() { }
+    //
+    // const empty = new Empty();
+    // Empty.prototype.answer = 42;
+    //
+    // document.writeln("Test: Q13: ");
+    // document.writeln(empty.answer === 42);
+
+    // const Empty = ( () => {
+    //     function Empty(){}
+    //     return Empty;
+    // }) ();
+    //
+    // const empty = Empty;
+    //
+    // document.writeln("Test: Q13: ");
+    // document.writeln(empty instanceof Empty);
+
+    // const Empty = ( () => {
+    //     function Empty(){}
+    //     return Empty;
+    // }) ();
+    //
+    // const empty = new Empty;
+    // const also = new Empty;
+    //
+    // Empty.prototype.answer = 42;
+    //
+    // document.writeln("Test: Q13: ");
+    // document.writeln(empty.answer === 42 && also.answer === 42 );
+
+    const Person = name => {
+        let age = 0;
+        return {
+            getAge: () => age,
+            setAge: newAge => age = newAge,
+            getName: () => name,
+            setName: newName => name = newName
+        }
+    };
+
+    const me = Person("Myself");
+    me.age = 50;
+    document.writeln("Test: Q14: ");
+    document.writeln(me.getName() === 50);
+
+    document.writeln("------------------------------");
+
+
+</script>
+</body>
+</html>
+
+
+
