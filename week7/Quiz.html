@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Scope Tests</title>
+</head>
+<body>
+<script>
+
+   //Test 10
+    document.writeln("------------------------------");
+
+    // function Empty() { }
+    //
+    // const empty = new Empty();
+    // Empty.prototype.answer = 42;
+    //
+    // document.writeln("Test: Q13: ");
+    // document.writeln(empty.answer === 42);
+
+    // const Empty = ( () => {
+    //     function Empty(){}
+    //     return Empty;
+    // }) ();
+    //
+    // const empty = Empty;
+    //
+    // document.writeln("Test: Q13: ");
+    // document.writeln(empty instanceof Empty);
+
+    // const Empty = ( () => {
+    //     function Empty(){}
+    //     return Empty;
+    // }) ();
+    //
+    // const empty = new Empty;
+    // const also = new Empty;
+    //
+    // Empty.prototype.answer = 42;
+    //
+    // document.writeln("Test: Q13: ");
+    // document.writeln(empty.answer === 42 && also.answer === 42 );
+
+    // const Person = name => {
+    //     let age = 0;
+    //     return {
+    //         getAge: () => age,
+    //         setAge: newAge => age = newAge,
+    //         getName: () => name,
+    //         setName: newName => name = newName
+    //     }
+    // };
+    //
+    // const me = Person("Myself");
+    // me.age = 50;
+    // document.writeln("Test: Q14: ");
+    // document.writeln(me.getName() === 50);
+
+    document.writeln("------------------------------");
+
+    document.writeln("Quiz Week 7:");
+
+   //  class Person {
+   //     constructor(name){
+   //         this.name = name;
+   //     }
+   //     isCool() {
+   //         return this.name.length > 3
+   //     };
+   //  }
+   //
+   // // class Person {
+   // //     isCool() {
+   // //         return this.name.length > 3
+   // //     };
+   // // }
+   //
+   //  const p = new Person("Joe");
+   //  p.prototype.isCool = () => true;
+   //  // p.isCool = () => true;
+   //  document.writeln(p.isCool());
+
+    class Person {
+    }
+    class Student {
+    }
+
+    const s = new Student();
+
+    //const p = {};
+    Object.setPrototypeOf(s, Person.prototype);
+    document.writeln(s instanceof Student);
+
+    document.writeln("------------------------------");
+    document.writeln("Quiz Week 7 Assignment:");
+
+    const inc    = x => x + 1; // plus rechnen
+    const double = x => x * 2; // mal rechnen
+
+    const add = (x, y) => x + y;
+    const mult = (x, y) => x * y;
+
+
+    // Funktion
+    // const then = x => inc(double(x));
+
+    Function.prototype.then = function (x) {
+        //return this.bind( (func, func2) => func(func2(x)))
+        //return this.bind( func => func + x)
+        return this.bind( func => func(x))
+    }
+
+    const add_ = 1;
+    const factor_ = 1;
+
+    // Test
+    document.writeln("Test: " + inc.then(double).then(double) (1) === 8);
+    document.writeln("Test: " + add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
+
+    // Test Array
+   // Array.prototype.eqTest = function ( array ) {
+   //     return this.length == array.length &&
+   //         // this.map(function (element, index) {return element === array[index]}) &&
+   //        this.every( function(this_element,index) { return this_element == array[index] } )
+   // }
+
+   Array.prototype.eq = function (array) {
+       return this.length === array.length &&
+               this.every( (element, index) => element === array[index])
+   }
+
+   let xs = [0,1,2,2];
+   let ys = [0,1,2,2];
+   document.writeln("Equal :" + xs.eq(ys));
+
+   Number.prototype.times = function (callback) {
+       return Array.from( {length: this}).map( (element, index) => callback(index));
+   }
+
+
+</script>
+</body>
+</html>
+
+
+
