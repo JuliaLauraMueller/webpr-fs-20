@@ -1,6 +1,7 @@
 // requires util.js
 
 // extending the prototype of many objects
+// makes a function called test
 test("util-times1", assert => {
 
     const collect = [];
@@ -15,15 +16,17 @@ test("util-times1", assert => {
 
 }) ;
 
-
-( () => {
-    let ok = [];
+//Ifi verwenden mit ( () => Es geht auch mit _ für Parameter
+test("util-times2", assert => {
 
     const collect = (10).times( n => n+1 );
 
-    ok.push(collect.length === 10);
-    ok.push(collect[0] === 1);
-    ok.push(collect[9] === 10);
+    assert.equals(collect.length , 10);
+    assert.equals(collect[0]     , 1);
+    assert.equals(collect[9]     , 10);
 
-    report("util-times2", ok);
-}) ();
+    // ok.push(collect.length === 10);
+    // ok.push(collect[0] === 1);
+    // ok.push(collect[9] === 10);
+
+});

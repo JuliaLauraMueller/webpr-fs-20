@@ -1,7 +1,7 @@
 "use strict";
 
 // find a solution for suite, test, assert
-
+// KonstruktorFunktion
 const Assert = () => {
     const ok = [];
     const equals = (actual, expected) => {
