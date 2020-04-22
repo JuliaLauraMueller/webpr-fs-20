@@ -12,6 +12,4 @@ function addTodo() {
         <td> <input type="checkbox"> </td>
     </tr>
 `
-
-    
 }

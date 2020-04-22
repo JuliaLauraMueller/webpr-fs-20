@@ -18,7 +18,9 @@ test("util-times1", assert => {
 
 }) ;
 
+
 //Ifi verwenden mit ( () => Es geht auch mit _ für Parameter
+
 test("util-times2", assert => {
 
     const collect = (10).times( n => n+1 );
@@ -30,5 +32,4 @@ test("util-times2", assert => {
     // ok.push(collect.length === 10);
     // ok.push(collect[0] === 1);
     // ok.push(collect[9] === 10);
-
 });
