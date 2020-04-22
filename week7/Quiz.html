@@ -103,12 +103,16 @@
 
     // Funktion
     // const then = x => inc(double(x));
+    //const plusOneTimesTwo = x => timestwo(plusOne(x));
+    const compose = f => g => x => g(f(x));
 
-    Function.prototype.then = function (x) {
-        //return this.bind( (func, func2) => func(func2(x)))
-        //return this.bind( func => func + x)
-        return this.bind( func => func(x))
-    }
+    Function.prototype.then = f => g => x => f(g(x));
+
+    // Function.prototype.then = function (x) {
+    //     //return this.bind( (func, func2) => func(func2(x)))
+    //     //return this.bind( func => func + x)
+    //     return this.bind( func => func(x))
+    // }
 
     const add_ = 1;
     const factor_ = 1;

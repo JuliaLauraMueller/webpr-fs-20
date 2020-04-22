@@ -9,6 +9,8 @@ test("util-times1", assert => {
     (10).times( n => collect.push(n) );
 
     assert.equals(collect.length ,  10);
+    // Browser anhalten und Debug hier öffnen wenn Console geöffnet
+    // debugger
     assert.equals(collect[0]     ,   0);
     assert.equals(collect[9]     ,   9);
 
