@@ -1,7 +1,7 @@
 
 let todoContainer = null;
 let numberOfTasks = null;
-let openTasks = null;
+let openTasks     = null;
 
 // Konstruktor
 function startTodo(newTodoContainer, newNumberOfTasks, newOpenTasks) {

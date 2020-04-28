@@ -11,17 +11,15 @@
 <div id="size"></div>
 
 <script>
-    // Sie müssen sich nicht mehr kennen und man hat keine Abhängigkeiten
     const nameInput = document.getElementById("name");
     const label     = document.getElementById("label");
     const size      = document.getElementById("size");
 
     const inputAttr = Observable("");
-    // Zwei unterschiedliche Listeners val ausgeben und dessen länge (size)
     inputAttr.onChange(val => label.innerText  = val);
     inputAttr.onChange(val => size.innerText   = val.length);
 
-    nameInput.oninput = _ => inputAttr.setValue(nameInput.value); // Wert setzen
+    nameInput.oninput = _ => inputAttr.setValue(nameInput.value);
 
 </script>
 
