@@ -2,6 +2,7 @@
 
 const TodoController = () => {
 
+    // Mit Observable arbeiten
     const Todo = () => {
         const textAttr = Observable("text");           // we current don't expose it as we don't use it elsewhere
         const doneAttr = Observable(false);
@@ -25,6 +26,7 @@ const TodoController = () => {
         if (i >= 0) { todoModel.splice(i, 1) } // essentially "remove(item)"
     };
 
+    // Die Werte die man berechnen will und anzeigen möchte
     return {
         numberOfTodos:      () => todoModel.length,
         numberOfopenTasks:  () => todoModel.reduce((sum, item) => item.getDone() ? sum : sum + 1, 0),

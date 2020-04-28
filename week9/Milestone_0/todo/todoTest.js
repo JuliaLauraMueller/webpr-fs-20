@@ -35,10 +35,11 @@ test("todo-crud", assert => {
 
     firstCheckbox.click();
 
+    // open task verminden und checked ist nun true
     assert.equals(firstCheckbox.checked, true);
 
-    assert.equals(numberOfTasks.innerText, '2');
-    assert.equals(openTasks.innerText, '1');
+    assert.equals(numberOfTasks.innerText, '2'); // bleibt gleich
+    assert.equals(openTasks.innerText, '1'); // hat sich verringert
 
     // add a test for the deletion of a todo-item
 

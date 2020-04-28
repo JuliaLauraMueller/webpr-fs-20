@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Scope Tests</title>
+</head>
+<body>
+<script>
+
+//    document.writeln("------------------------------");
+//    document.writeln("Quiz Week 7 Assignment:");
+//
+//    const inc    = x => x + 1; // plus rechnen
+//    const double = x => x * 2; // mal rechnen
+//
+//    //const add = (x, y) => x + y;
+//    //const mult = (x, y) => x * y;
+//
+//
+//    // Funktions Composition
+//    // const then = x => inc(double(x));
+//    const plusOneTimesTwo = x => timestwo(plusOne(x));
+//    const compose = f => g => x => g(f(x));
+//
+//    Function.prototype.then = f => g => x => f(g(x));
+//
+//    // Function.prototype.then = function () {
+//    //     //return this.bind( (func, func2) => func(func2(x)))
+//    //     //return this.bind( func => func + x)
+//    //     //return this.bind( func => func(x))
+//    //     return this.bind( f => g => x => g(f(x)) );
+//    // }
+//
+//    const add_ = 1;
+//    const factor_ = 1;
+//
+//    // Test
+//    document.writeln("Test Composition: ")
+//    document.writeln(inc.then(double).then(double) (1) === 8);
+//    //document.writeln("Test Composition: " + add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
+
+
+    document.writeln("------------------------------");
+    document.writeln("Quiz Week 8:");
+
+    function Todo(text, done){
+        // function check() {
+        //     done = true;
+        // }
+        //const done = false;
+        const check = () => done = true;
+        return {
+            getText: () => text,
+            isDone: () => done,
+            check: check
+        }
+    }
+
+    let todo = Todo("buy milk", false);
+    todo.check();
+    document.writeln(todo.isDone());
+
+   //document.writeln("------------------------------");
+   document.writeln("Quiz Week 8 Shows True: ");
+
+   function handle(count, callback) {
+       const result = [];
+       for(let i=0; i < count; i++){
+           callback( result );
+       }
+       //callback( result );
+       return result;
+   }
+
+   //let it = [];
+   document.writeln( handle( 3, it => it.push(1) ).length === 3);
+
+   //document.writeln("------------------------------");
+   //document.writeln("Quiz Week 8 Assignment Function: ");
+
+   // // Funktion
+   // const eShow = x => either(x)(msg => msg) (val => "Result is: " + val);
+   //
+   // // const compose = f => g => x => g(f(x));
+   // //
+   // // Function.prototype.then = f => g => x => f(g(x));
+   //
+   // // Funktion
+   // const failSafe = callback => err => arg => (callback(arg)) (err)
+   //
+   // const doError    = x => { throw new Error() };
+   // const errorCount = failSafe (1) (doError);
+   //
+   // failSafe (false) (x=>x) (true) && failSafe (true) (doError) (null) && errorCount(null) === 1
+
+    document.writeln("------------------------------");
+    document.writeln("Quiz Week 9 Shows : ");
+
+    // const Observable = value => {
+    //     const listeners = [];
+    //     return {
+    //         onChange: callback =>
+    //             listeners.push(callback)
+    //             // callback(value, value);
+    //         ,
+    //         getValue: ()       => value,
+    //         setValue: val => {
+    //             if (value === val) return;
+    //             value = val;
+    //             //const oldValue = value;
+    //             //value = newValue;
+    //             listeners.forEach(listeners => listeners(val));
+    //         }
+    //     }
+    // };
+
+    // const color = Observable('white');
+    // //let observed = color.getValue();
+    // let updateCount = 0;
+    // //const updateListener = val => updateCount++;
+    // color.onChange(_ => updateCount++);
+    // //color.onChange(val => observed = val);
+    // //color.setValue('black');
+    // color.setValue('white');
+    //
+    // //color.value = 'black'
+    // document.writeln( updateCount === 1);
+
+    document.writeln("------------------------------");
+    document.writeln("Quiz Week 9 Assignment : ");
+
+    const Observable = value => {
+        const listeners = [];
+        return {
+            onChange: callback => {
+                listeners.push(callback)
+                callback(value, value);
+            },
+            getValue: ()       => value,
+            setValue: newValue => {
+                if (value === newValue) return;
+                const oldValue = value;
+                value = newValue;
+                listeners.forEach(listeners => listeners(value, oldValue));
+            }
+        }
+    };
+
+    const trackable = Observable(0);
+    let sum = 0;
+
+    //Funktion
+    //trackable.onChange(_ => sum++); Zählt Wert um 1 rauf
+    trackable.onChange(val => sum += val); // Zählt Wert zusammen
+
+    const x_ = 1;
+    const y_ = 2;
+    const z_ = 3;
+
+    // Tests
+    trackable.setValue(x_); // values x_, y_, z_ are given. Do not override.
+    trackable.setValue(y_);
+    trackable.setValue(z_);
+
+    document.writeln( trackable.getValue() === z_ && sum === x_ + y_ + z_ );
+
+
+</script>
+</body>
+</html>
+
+
+

@@ -39,6 +39,7 @@ test("observable-value", assert => {
 
 });
 
+// Erweiterung von Observable mit Listen-Symantik
 test("observable-list", assert => {
     const raw  = [];
     const list = ObservableList( raw ); // decorator pattern
