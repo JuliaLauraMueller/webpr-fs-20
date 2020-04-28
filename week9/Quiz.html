@@ -164,6 +164,12 @@
 
     document.writeln( trackable.getValue() === z_ && sum === x_ + y_ + z_ );
 
+    document.writeln("------------------------------");
+    document.writeln("Quiz Week 10 : ");
+
+    const idPromise = x => new Promise( resolve => resolve(x));
+
+    idPromise(1).then(it => document.writeln(it))
 
 </script>
 </body>
