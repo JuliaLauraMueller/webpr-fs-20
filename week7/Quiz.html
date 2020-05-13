@@ -7,55 +7,6 @@
 <body>
 <script>
 
-   //Test 10
-    document.writeln("------------------------------");
-
-    // function Empty() { }
-    //
-    // const empty = new Empty();
-    // Empty.prototype.answer = 42;
-    //
-    // document.writeln("Test: Q13: ");
-    // document.writeln(empty.answer === 42);
-
-    // const Empty = ( () => {
-    //     function Empty(){}
-    //     return Empty;
-    // }) ();
-    //
-    // const empty = Empty;
-    //
-    // document.writeln("Test: Q13: ");
-    // document.writeln(empty instanceof Empty);
-
-    // const Empty = ( () => {
-    //     function Empty(){}
-    //     return Empty;
-    // }) ();
-    //
-    // const empty = new Empty;
-    // const also = new Empty;
-    //
-    // Empty.prototype.answer = 42;
-    //
-    // document.writeln("Test: Q13: ");
-    // document.writeln(empty.answer === 42 && also.answer === 42 );
-
-    // const Person = name => {
-    //     let age = 0;
-    //     return {
-    //         getAge: () => age,
-    //         setAge: newAge => age = newAge,
-    //         getName: () => name,
-    //         setName: newName => name = newName
-    //     }
-    // };
-    //
-    // const me = Person("Myself");
-    // me.age = 50;
-    // document.writeln("Test: Q14: ");
-    // document.writeln(me.getName() === 50);
-
     document.writeln("------------------------------");
 
     document.writeln("Quiz Week 7:");
@@ -106,7 +57,7 @@
     //const plusOneTimesTwo = x => timestwo(plusOne(x));
     const compose = f => g => x => g(f(x));
 
-    Function.prototype.then = f => g => x => f(g(x));
+    //Function.prototype.then = f => g => x => f(g(x));
 
     // Function.prototype.then = function (x) {
     //     //return this.bind( (func, func2) => func(func2(x)))
@@ -114,12 +65,16 @@
     //     return this.bind( func => func(x))
     // }
 
+    Function.prototype.then = function (fn) {
+        return x => fn(this(x));
+    };
+
     const add_ = 1;
     const factor_ = 1;
 
     // Test
-    document.writeln("Test: " + inc.then(double).then(double) (1) === 8);
-    document.writeln("Test: " + add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
+    document.writeln(inc.then(double).then(double) (1) === 8);
+    document.writeln(add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
 
     // Test Array
    // Array.prototype.eqTest = function ( array ) {

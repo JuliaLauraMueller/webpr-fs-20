@@ -13,8 +13,8 @@
     const inc    = x => x + 1; // plus rechnen
     const double = x => x * 2; // mal rechnen
 
-    //const add = (x, y) => x + y;
-    //const mult = (x, y) => x * y;
+    const add = (x, y) => x + y;
+    const mult = (x, y) => x * y;
 
 
     // Funktions Composition
@@ -37,7 +37,7 @@
     // Test
     document.writeln("Test Composition: ")
     document.writeln(inc.then(double).then(double) (1) === 8);
-    //document.writeln("Test Composition: " + add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
+    document.writeln("Test Composition: " + add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
 
 
     document.writeln("------------------------------");
@@ -86,12 +86,14 @@
    // Function.prototype.then = f => g => x => f(g(x));
 
    // Funktion
-   const failSafe = callback => err => arg => (callback(arg)) (err)
+   const failSafe2 = callback => err => arg => (callback(arg)) (err);
+
+   const failSafe = x => callback => args => (callback(args)) (x);
 
    const doError    = x => { throw new Error() };
    const errorCount = failSafe (1) (doError);
 
-   failSafe (false) (x=>x) (true) && failSafe (true) (doError) (null) && errorCount(null) === 1
+   document.writeln(failSafe (false) (x=>x) (true) && failSafe (true) (doError) (null) && errorCount(null) === 1)
 
 
 </script>

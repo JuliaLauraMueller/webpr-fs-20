@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Scope Tests</title>
+</head>
+<body>
+<script>
+
+    document.writeln("-----------------------------------");
+    document.writeln("Quiz Week 10 : ");
+
+    const idPromise     = x   => new Promise( resolve => resolve(x));
+    const failPromise   = err => new Promise( (resolve, reject) => reject(err));
+
+    const inc        = n => idPromise(n + 1);
+    const filterEven = n => n % 2 === 0 ? idPromise(n) : failPromise("not even");
+
+    const writer = x => {
+        document.writeln(x);
+        return idPromise(x)
+    };
+
+    // Async
+    const foo = async i => {
+        let x = await idPromise(i);
+        x = await writer(x)
+        //x.then(writer);
+        //document.writeln(x)
+        // while (x < 4){
+        //      x = await filterEven(x);
+        //      x = await writer(x);
+        //      x = await inc(x);
+        // }
+    };
+    foo(1);
+
+    // // Promise
+    // const filterEven2 = n => {
+    //     if (n % 2 === 0){
+    //         return n
+    //     } else
+    //         throw Error("not even")
+    // };
+
+    //document.writeln(idPromise(1));
+    //idPromise(1).then(it => document.writeln(it))
+
+    //idPromise(1)
+        //.then()
+        //.then( writer )
+        //.then (inc)
+        //.then( writer)
+        //.then( filterEven)
+        //.then( writer )
+        //.catch( err => {});
+        //.then(it => it + 1)
+        //.then ( it => it)
+        //.then( writer )
+        //.then( it => { document.writeln(it); return it;})
+        //.then( it => document.writeln(it));
+        //.then( it => document.writeln(it));
+
+    document.writeln("-----------------------------------");
+    document.writeln("Quiz Week 10 Assignment : ");
+
+    const filterEven3 = n => n % 2 === 0 ? idPromise(n) : failPromise("not even");
+
+    //(y !== null) ? isNullSafe(y) : undefined;
+
+    const NullSafe = x => {
+        const isNullSafe = y => y && y.then;
+        const maywrap    = y => (y !== null) ? isNullSafe(y) : null;// if y is not NullSafe yet, make it so
+        return {
+            then: fn => (x !== null || x !== undefined) ? fn(x) : maywrap(x) // see(1)
+        }
+    };
+
+    //(1) if x is not null or undefined, call fn(x); either way, make sure the result is a NullSafe
+
+    const x = 1
+    NullSafe(1).then(console.log);                   // will call the log
+    NullSafe(null).then(console.log);                // will not call the log
+    //NullSafe(2).then( x => null).then(console.log);  // will not call the log
+
+
+    let x_ = 2;
+    let y_ = 2;
+    // x_ and y_ are given. do not override.
+    NullSafe(x_)
+        .then( x => x*2)          // must auto-promote
+        .then( x => NullSafe(x))  // must not auto-promote
+        .then( x => y_ = x + 1)   // store value, check no double promotion
+        .then( x => null)         // jump over rest
+        .then( x => document.writeln(x.mustNotBeCalled) !== null && y_ === x_ * 2 + 1);
+
+
+</script>
+</body>
+</html>
+
+
+

@@ -77,7 +77,7 @@ const TodoTotalView = (todoController, numberOfTasksElement) => {
     const render = () =>
         numberOfTasksElement.innerText = "" + todoController.numberOfTodos();
 
-    // binding
+    // binding, Nur Controller kennt dieses Binding
 
     todoController.onTodoAdd(render);
     todoController.onTodoRemove(render);

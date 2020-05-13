@@ -1,5 +1,5 @@
 
-
+// Normaler Obserable inizialisieren
 const Observable = value => {
     const listeners = [];
     return {
@@ -17,7 +17,7 @@ const Observable = value => {
     }
 };
 
-
+// ArrayList von Observable
 const ObservableList = list => {
     const addListeners = [];
     const delListeners = [];
@@ -34,8 +34,9 @@ const ObservableList = list => {
         },
         del: item => {
             listRemoveItem(item);
+            // Copy von den delListener-Array erstellen --> Problem MemoryLeak lösen
             const safeIterate = [...delListeners]; // shallow copy as we might change listeners array while iterating
-            safeIterate.forEach( (listener, index) => listener(item, () => delListenersRemove(index) ));
+            safeIterate.forEach( (listener, index) => listener(item, () => delListenersRemove(index) )); // sicherer mit Index
         },
         removeDeleteListener: removeItem(delListeners),
         count:   ()   => list.length,

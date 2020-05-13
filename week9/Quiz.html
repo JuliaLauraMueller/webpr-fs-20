@@ -7,39 +7,6 @@
 <body>
 <script>
 
-//    document.writeln("------------------------------");
-//    document.writeln("Quiz Week 7 Assignment:");
-//
-//    const inc    = x => x + 1; // plus rechnen
-//    const double = x => x * 2; // mal rechnen
-//
-//    //const add = (x, y) => x + y;
-//    //const mult = (x, y) => x * y;
-//
-//
-//    // Funktions Composition
-//    // const then = x => inc(double(x));
-//    const plusOneTimesTwo = x => timestwo(plusOne(x));
-//    const compose = f => g => x => g(f(x));
-//
-//    Function.prototype.then = f => g => x => f(g(x));
-//
-//    // Function.prototype.then = function () {
-//    //     //return this.bind( (func, func2) => func(func2(x)))
-//    //     //return this.bind( func => func + x)
-//    //     //return this.bind( func => func(x))
-//    //     return this.bind( f => g => x => g(f(x)) );
-//    // }
-//
-//    const add_ = 1;
-//    const factor_ = 1;
-//
-//    // Test
-//    document.writeln("Test Composition: ")
-//    document.writeln(inc.then(double).then(double) (1) === 8);
-//    //document.writeln("Test Composition: " + add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
-
-
     document.writeln("------------------------------");
     document.writeln("Quiz Week 8:");
 
@@ -163,13 +130,6 @@
     trackable.setValue(z_);
 
     document.writeln( trackable.getValue() === z_ && sum === x_ + y_ + z_ );
-
-    document.writeln("------------------------------");
-    document.writeln("Quiz Week 10 : ");
-
-    const idPromise = x => new Promise( resolve => resolve(x));
-
-    idPromise(1).then(it => document.writeln(it))
 
 </script>
 </body>
