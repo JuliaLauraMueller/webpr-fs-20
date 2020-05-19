@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Scope Tests</title>
+</head>
+<body>
+<script>
+
+    const Scheduler = () => {
+        let inProcess = false;
+        const tasks = [];
+        function process() {
+            if (inProcess) { return; } // nichts machen, solange man arbeitet
+            if (tasks.length === 0) { return; } // guard clause
+            inProcess = true;
+            const task = tasks.pop(); // Task holen, am Ende der Schlange entfernt.
+
+            new Promise( (resolve, reject) => { // Nebenläufig starten
+                task(resolve);
+            }). then ( () => {
+                inProcess = false;
+                process(); // Rekursiver-Aufruf (endlos, nein lauft in den Stackoverflow) ist ok mit async
+            });
+        }
+        function add(task) {
+            tasks.unshift(task); // Am anfang eingefügt der Schlange
+            process(); // abarbeiten
+        }
+        return {
+            add: add,
+            addOk: task => add( ok => { task(); ok(); }) // convenience
+        }
+    };
+
+    document.writeln("-----------------------------------");
+    document.writeln("Quiz Week 12 : ");
+
+    let state = [0];
+
+    const scheduler = Scheduler();
+    scheduler.add(ok => {
+        setTimeout(_ => {
+            //state = state - 2;
+            state.push(1);
+            ok();
+        }, 100)
+    });
+
+    scheduler.add(ok => {
+        //state = state - 1;
+        state.push(2);
+        ok();
+    });
+
+    // scheduler.add(ok => {
+    //     //state = state - 1;
+    //     document.writeln(state);
+    //     //console.log(state)
+    //     ok();
+    // });
+
+    //console.log('x')
+
+    document.writeln(state);
+
+    const DataFlowVariable = howto => {
+        let value = undefined;
+        return () => undefined === value // gibt eine Funktion zurück
+            ? value = howto()
+            : value;
+    };
+
+    // ------------------------s-----------------
+
+    const x = DataFlowVariable(() => y() * 2);
+    let y = DataFlowVariable(() => 1);
+    //let y   = DataFlowVariable(() => 1);
+    x();
+    y = DataFlowVariable(() => 2);
+
+
+    //y = DataFlowVariable(() => 2);
+    document.writeln(x());
+
+
+</script>
+</body>
+</html>
+
+
+

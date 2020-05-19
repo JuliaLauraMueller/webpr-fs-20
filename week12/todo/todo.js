@@ -22,20 +22,20 @@ const TodoController = () => {
         todoModel.add(newTodo);
         return newTodo;
     };
-//    const scheduler = Scheduler();
+    const scheduler = Scheduler();
     const addFortuneTodo = button => {
-//        button.disabled = true;
+        button.disabled = true;
         const newTodo = Todo();
         todoModel.add(newTodo);
         newTodo.setText("...");
 
-//        scheduler.add( ok => {
-            fortuneService( text => {
+        scheduler.add( ok => { // Funktion ok mitgeben. Dann darf der nächste Task bearbeitet werden.
+            fortuneService( text => { // sind oft async
                 newTodo.setText(text);
-//                button.disabled = false;
+                button.disabled = false;
                 ok();
             });
-//        });
+        });
 
 
         return newTodo;
