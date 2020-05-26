@@ -7,60 +7,6 @@
 <body>
 <script>
 
-    document.writeln("------------------------------");
-    document.writeln("Quiz Week 8:");
-
-    function Todo(text, done){
-        // function check() {
-        //     done = true;
-        // }
-        //const done = false;
-        const check = () => done = true;
-        return {
-            getText: () => text,
-            isDone: () => done,
-            check: check
-        }
-    }
-
-    let todo = Todo("buy milk", false);
-    todo.check();
-    document.writeln(todo.isDone());
-
-   //document.writeln("------------------------------");
-   document.writeln("Quiz Week 8 Shows True: ");
-
-   function handle(count, callback) {
-       const result = [];
-       for(let i=0; i < count; i++){
-           callback( result );
-       }
-       //callback( result );
-       return result;
-   }
-
-   //let it = [];
-   document.writeln( handle( 3, it => it.push(1) ).length === 3);
-
-   //document.writeln("------------------------------");
-   //document.writeln("Quiz Week 8 Assignment Function: ");
-
-   // // Funktion
-   // const eShow = x => either(x)(msg => msg) (val => "Result is: " + val);
-   //
-   // // const compose = f => g => x => g(f(x));
-   // //
-   // // Function.prototype.then = f => g => x => f(g(x));
-   //
-   // // Funktion
-   // const failSafe = callback => err => arg => (callback(arg)) (err)
-   //
-   // const doError    = x => { throw new Error() };
-   // const errorCount = failSafe (1) (doError);
-   //
-   // failSafe (false) (x=>x) (true) && failSafe (true) (doError) (null) && errorCount(null) === 1
-
-    document.writeln("------------------------------");
     document.writeln("Quiz Week 9 Shows : ");
 
     // const Observable = value => {

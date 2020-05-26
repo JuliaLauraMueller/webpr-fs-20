@@ -7,8 +7,8 @@
 <body>
 <script>
 
-    // Test 4
-    document.writeln("Test 4");
+    // Quiz 4
+    document.writeln("Quiz 4: ");
     document.writeln("------------------------------");
 
     document.writeln("Test Reduce:");
@@ -58,12 +58,13 @@
     // returns either the error string (in case of division by 0)
     // or otherwise the success message "Result is: " with the result appended.
     // Provided is:
+
     const id = x => x;
     const Left   = x => f => g => f (x);
     const Right  = x => f => g => g (x);
     const either = e => f => g => e (f) (g);
 
-    // Funktion
+    // Funktion eShow
     const eShow = x => either(x)(msg => msg) (val => "Result is: " + val);
 
     const x_ = Math.random();
@@ -72,7 +73,7 @@
             ? Left  ("Cannot divide by 0")
             : Right (num / divisor);
 
-    document.writeln("Test eShow:")
+    document.writeln("Assignment eShow:")
     document.writeln(
         eShow( safeDiv(1)(0))  === "Cannot divide by 0")
     document.writeln(

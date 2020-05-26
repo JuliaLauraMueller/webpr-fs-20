@@ -1,6 +1,6 @@
 
 import { pi, a, b, setA, setB } from './mod.js'  // <- note the URL format !
-import { Suite }                from '../util/test.js'
+import { Suite }                from '../util/test.js' // nicht dynamisch machen, Literale Strings.
 
 export const modSuite = Suite('mod');
 
@@ -15,7 +15,7 @@ modSuite.add("singleton", assert => {
     assert.is(a, null);
     assert.is(b, null);
 
-    setA("Dierk"); // there is no object exposed and so no target to attack
+    setA("Dierk"); // there is no object exposed and so no target to attack, Schutz nicht überschreiben
     setB("König");
 
     assert.is(a, "Dierk");
@@ -25,7 +25,7 @@ modSuite.add("singleton", assert => {
 
     // this kind of test does not work with the bundler as it checks the erroneous assignment
     // try {
-    //     a = "shall not work";
+         a = "shall not work";
     //     assert.true(false);
     // } catch (e) {
     //     assert.true("exported variables are read-only.")

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Scope Tests</title>
+</head>
+<body>
+<script>
+
+    // Palindrome
+    document.writeln("Quiz Week 13 Assignment : ");
+
+    function palindrome (str) {
+        let charArray = str2chars(str.toLowerCase());
+        let newCharArray = charArray.filter(char => isAlpha(char));
+
+        const newCharArrayReverse = [...newCharArray].reverse()
+
+        for (var i = 0; i < newCharArray.length; i++){
+            if(newCharArray[i] !== newCharArrayReverse[i]){
+                return false;
+            } else
+                return true
+        }
+    }
+
+    // helpers
+    const str2chars = str  => [...str];            // convert a string to an array of chars
+    const isAlpha   = char => char.match(/[a-z]/); // char is in the alphabet
+
+    //tested against:
+    document.writeln( palindrome("Amore, Roma!")
+        && palindrome("Madam, I'm Adam!")
+        && palindrome("Never odd or even.")
+        && ! palindrome("Amore") )
+
+    // Filters
+    const join = x => (accu, curr) => accu + x +curr;
+    //document.writeln([1,2,3].reduce(join('-')) === '1-2-3');
+
+    const twice = a => a * 2;
+    //document.writeln([1,2,3].map(twice).toString() === "2,4,6");
+
+    const divides = x => y => y % x === 0;
+    //document.writeln([1,2,3,4,5,6].filter(divides(3)).toString() === "3,6");
+
+</script>
+</body>
+</html>
+
+
+

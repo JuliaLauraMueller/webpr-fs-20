@@ -67,26 +67,59 @@
     const filterEven3 = n => n % 2 === 0 ? idPromise(n) : failPromise("not even");
 
     //(y !== null) ? isNullSafe(y) : undefined;
+    //(y !== null) ? isNullSafe(y) : null;
+    //fn => (x !== null || x === undefined) ? fn(x) : maywrap(x)
+
+    const NullSafe2 = x => {
+        const isNullSafe = y => y && y.then;
+        const maywrap    = y => {
+            if (!isNullSafe(y)) {
+                // what to do
+                isNullSafe(y)
+            }
+        }// if y is not NullSafe yet, make it so
+        return {
+            then: fn => {
+                if (x !== null || x === undefined) {
+                    maywrap(fn(x))
+                } else {
+                    maywrap(x)
+                }
+                 // see(1)
+            }
+        }
+    };
 
     const NullSafe = x => {
         const isNullSafe = y => y && y.then;
-        const maywrap    = y => (y !== null) ? isNullSafe(y) : null;// if y is not NullSafe yet, make it so
+        const maywrap    = y => new Promise( (resolve, reject)=>{
+            if(isNullSafe(y)){
+                resolve(y);
+            } else
+                reject(y);
+        }); // if y is not NullSafe yet, make it so
         return {
-            then: fn => (x !== null || x !== undefined) ? fn(x) : maywrap(x) // see(1)
+            then: fn => {
+                if ((x !== null) && (x === "undefined")) {
+                    fn(x)
+                } else {
+                    isNullSafe(x)
+                }
+                // see(1)
+            }
         }
     };
 
     //(1) if x is not null or undefined, call fn(x); either way, make sure the result is a NullSafe
 
-    const x = 1
+    //const x = 1
     NullSafe(1).then(console.log);                   // will call the log
     NullSafe(null).then(console.log);                // will not call the log
-    //NullSafe(2).then( x => null).then(console.log);  // will not call the log
-
+    NullSafe(2).then( x => null).then(console.log);  // will not call the log
 
     let x_ = 2;
     let y_ = 2;
-    // x_ and y_ are given. do not override.
+    // x_ and y_ are given. do not override.??
     NullSafe(x_)
         .then( x => x*2)          // must auto-promote
         .then( x => NullSafe(x))  // must not auto-promote

@@ -8,39 +8,6 @@
 <script>
 
     document.writeln("------------------------------");
-    document.writeln("Quiz Week 7 Assignment:");
-
-    const inc    = x => x + 1; // plus rechnen
-    const double = x => x * 2; // mal rechnen
-
-    const add = (x, y) => x + y;
-    const mult = (x, y) => x * y;
-
-
-    // Funktions Composition
-    // const then = x => inc(double(x));
-    const plusOneTimesTwo = x => timestwo(plusOne(x));
-    const compose = f => g => x => g(f(x));
-
-    Function.prototype.then = f => g => x => f(g(x));
-
-    // Function.prototype.then = function () {
-    //     //return this.bind( (func, func2) => func(func2(x)))
-    //     //return this.bind( func => func + x)
-    //     //return this.bind( func => func(x))
-    //     return this.bind( f => g => x => g(f(x)) );
-    // }
-
-    const add_ = 1;
-    const factor_ = 1;
-
-    // Test
-    document.writeln("Test Composition: ")
-    document.writeln(inc.then(double).then(double) (1) === 8);
-    document.writeln("Test Composition: " + add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
-
-
-    document.writeln("------------------------------");
     document.writeln("Quiz Week 8:");
 
     function Todo(text, done){
@@ -76,19 +43,26 @@
    document.writeln( handle( 3, it => it.push(1) ).length === 3);
 
    document.writeln("------------------------------");
-   document.writeln("Quiz Week 8 Assignment Function: ");
+   document.writeln("Quiz Week 8 Assignment Function failsafe: ");
 
    // Funktion
-   const eShow = x => either(x)(msg => msg) (val => "Result is: " + val);
+   const failSafeTwo = x => callback => arg => {
+       try { return callback(arg)} catch{ return (x)}
+   }
 
-   // const compose = f => g => x => g(f(x));
-   //
-   // Function.prototype.then = f => g => x => f(g(x));
-
-   // Funktion
-   const failSafe2 = callback => err => arg => (callback(arg)) (err);
-
-   const failSafe = x => callback => args => (callback(args)) (x);
+   function failSafe(x){
+       return (callback) => {
+           return (arg) => {
+               try
+               {
+                   return callback(arg);
+               }
+               catch  {
+                  return x
+               }
+           }
+       }
+    }
 
    const doError    = x => { throw new Error() };
    const errorCount = failSafe (1) (doError);

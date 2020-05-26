@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b594a230-b09a-493a-b8b2-bca1c7ddf65c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/week12/Quiz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week13/Quiz.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week12/Goodie.html" beforeDir="false" afterPath="$PROJECT_DIR$/week12/Goodie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week12/dataflow/dataflow.js" beforeDir="false" afterPath="$PROJECT_DIR$/week12/dataflow/dataflow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week12/dataflow/dataflowTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/week12/dataflow/dataflowTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week12/todo/fortuneService.js" beforeDir="false" afterPath="$PROJECT_DIR$/week12/todo/fortuneService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week12/todo/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/week12/todo/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week10/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week10/Quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week12/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week12/Quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/Goodie.html" beforeDir="false" afterPath="$PROJECT_DIR$/week13/Goodie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/allModuleTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/week13/allModuleTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/allModuleTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/allModuleTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/dataflow/dataflow.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/dataflow/dataflow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/excel/excel.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/excel/excel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/excel/excelTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/excel/excelTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/mod/mod.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/mod/mod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/mod/modTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/mod/modTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week3/lambda/lambdaQuiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week3/lambda/lambdaQuiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week5/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week5/Quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week6/Quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week7/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week7/Quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week8/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week8/Quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week9/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week9/Quiz.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,17 +34,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week12/Quiz.html">
+        <entry file="file://$PROJECT_DIR$/week13/Quiz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="360">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week8/allTests.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/week8/Quiz.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -49,25 +65,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/week1/snake/snake.js" />
-        <option value="$PROJECT_DIR$/week3/AllTests.html" />
-        <option value="$PROJECT_DIR$/week2/scopeTest.html" />
-        <option value="$PROJECT_DIR$/week3/lambda/lambdaQuiz.js" />
-        <option value="$PROJECT_DIR$/week3/ball/ball.js" />
-        <option value="$PROJECT_DIR$/week2/ball/ball.js" />
-        <option value="$PROJECT_DIR$/week4/AllTests.html" />
-        <option value="$PROJECT_DIR$/week4/snake/snakeTest.js" />
-        <option value="$PROJECT_DIR$/week3/lambda/lambdaTest.js" />
         <option value="$PROJECT_DIR$/week3/lambda/lambda.js" />
         <option value="$PROJECT_DIR$/week5/lambda/lambda.js" />
         <option value="$PROJECT_DIR$/week5/plotter/plotter.js" />
         <option value="$PROJECT_DIR$/week5/snake/snake.js" />
         <option value="$PROJECT_DIR$/week5/AllTests.html" />
         <option value="$PROJECT_DIR$/week5/Goodie.html" />
-        <option value="$PROJECT_DIR$/week6/Quiz.html" />
-        <option value="$PROJECT_DIR$/week3/lambda/lambdaQuiz.html" />
-        <option value="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" />
-        <option value="$PROJECT_DIR$/week5/Quiz.html" />
         <option value="$PROJECT_DIR$/week6/object/objectTest.js" />
         <option value="$PROJECT_DIR$/week6/infection/infection.html" />
         <option value="$PROJECT_DIR$/week6/object/object.html" />
@@ -88,10 +91,6 @@
         <option value="$PROJECT_DIR$/week10/Milestone_5/observable/observable.js" />
         <option value="$PROJECT_DIR$/week10/Milestone_5/todo/todo.js" />
         <option value="$PROJECT_DIR$/week10/Milestone_5/todo/View.html" />
-        <option value="$PROJECT_DIR$/week9/Quiz.html" />
-        <option value="$PROJECT_DIR$/week10/Quiz.html" />
-        <option value="$PROJECT_DIR$/week7/Quiz.html" />
-        <option value="$PROJECT_DIR$/week8/Quiz.html" />
         <option value="$PROJECT_DIR$/week12/Goodie.html" />
         <option value="$PROJECT_DIR$/week12/todo/fortuneService.js" />
         <option value="$PROJECT_DIR$/week12/todo/todo.js" />
@@ -99,13 +98,32 @@
         <option value="$PROJECT_DIR$/week12/dataflow/dataflow.js" />
         <option value="$PROJECT_DIR$/week12/dataflow/quiz_df.html" />
         <option value="$PROJECT_DIR$/week12/todo/Quiz.html" />
+        <option value="$PROJECT_DIR$/week13/Goodie.html" />
+        <option value="$PROJECT_DIR$/week13/allModuleTests.html" />
+        <option value="$PROJECT_DIR$/week13/mod/mod.js" />
+        <option value="$PROJECT_DIR$/week13/mod/modTest.js" />
+        <option value="$PROJECT_DIR$/week13/allModuleTests.js" />
+        <option value="$PROJECT_DIR$/week13/excel/excel.js" />
+        <option value="$PROJECT_DIR$/week13/excel/excelTest.js" />
+        <option value="$PROJECT_DIR$/week13/dataflow/dataflow.js" />
+        <option value="$PROJECT_DIR$/week13/Quiz.html" />
         <option value="$PROJECT_DIR$/week12/Quiz.html" />
+        <option value="$PROJECT_DIR$/week10/Quiz.html" />
+        <option value="$PROJECT_DIR$/week9/Quiz.html" />
+        <option value="$PROJECT_DIR$/week8/Quiz.html" />
+        <option value="$PROJECT_DIR$/week6/Quiz.html" />
+        <option value="$PROJECT_DIR$/week7/Quiz.html" />
+        <option value="$PROJECT_DIR$/week5/Quiz.html" />
+        <option value="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" />
+        <option value="$PROJECT_DIR$/week3/lambda/lambdaQuiz.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="346" />
+    <option name="y" value="23" />
+    <option name="width" value="934" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -119,24 +137,19 @@
               <item name="webpr-fs-20" type="b2602c69:ProjectViewProjectNode" />
               <item name="webpr-fs-20" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="webpr-fs-20" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webpr-fs-20" type="462c0819:PsiDirectoryNode" />
-              <item name="week12" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/week12/dataflow" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week13" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -145,16 +158,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/week12" />
-      <recent name="$PROJECT_DIR$/week12/todo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week13" />
       <recent name="$PROJECT_DIR$/week12/dataflow" />
       <recent name="$PROJECT_DIR$/week12" />
       <recent name="$PROJECT_DIR$/week10" />
       <recent name="$PROJECT_DIR$/week9" />
-      <recent name="$PROJECT_DIR$/week8" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week12" />
+      <recent name="$PROJECT_DIR$/week12/todo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -169,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.snake.html">
+  <component name="RunManager" selected="JavaScript Debug.Quiz.html">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -189,10 +202,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="functionsTestQuiz.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/webpr-fs-20/week1/functionsTestQuiz.html" useBuiltInWebServerPort="true">
+    <configuration name="Quiz.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/webpr-fs-20/week10/Quiz.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="functionsTest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/webpr-fs-20/week1/functionsTest.html" useBuiltInWebServerPort="true">
+    <configuration name="allModuleTests.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/webpr-fs-20/week13/allModuleTests.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="snakeTest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/webpr-fs-20/week1/snake/snakeTest.html" useBuiltInWebServerPort="true">
@@ -224,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Quiz.html" />
+        <item itemvalue="JavaScript Debug.allModuleTests.html" />
         <item itemvalue="JavaScript Debug.snake.html" />
         <item itemvalue="JavaScript Debug.snake.html (1)" />
         <item itemvalue="JavaScript Debug.snakeTest.html" />
-        <item itemvalue="JavaScript Debug.functionsTestQuiz.html" />
-        <item itemvalue="JavaScript Debug.functionsTest.html" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +284,15 @@
       <workItem from="1588507816160" duration="2377000" />
       <workItem from="1588746806339" duration="867000" />
       <workItem from="1589350853876" duration="6451000" />
-      <workItem from="1589914471398" duration="85000" />
+      <workItem from="1589914471398" duration="347000" />
+      <workItem from="1589955445957" duration="1681000" />
+      <workItem from="1589959064419" duration="5234000" />
+      <workItem from="1589967040391" duration="1547000" />
+      <workItem from="1590157281332" duration="2974000" />
+      <workItem from="1590160674356" duration="14000" />
+      <workItem from="1590493080031" duration="4679000" />
+      <workItem from="1590498056915" duration="903000" />
+      <workItem from="1590504346530" duration="1423000" />
     </task>
     <task id="LOCAL-00001" summary="solved snake-game">
       <created>1582140952691</created>
@@ -305,7 +326,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103225000" />
+    <option name="totallyTimeSpent" value="121942000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -317,10 +338,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8404727" visible="true" weight="0.23505655" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8404727" visible="true" weight="0.24555735" />
       <window_info id="Structure" order="1" sideWeight="0.15952733" side_tool="true" weight="0.18659128" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -330,14 +350,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.14285715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.13437058" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.14427157" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29985857" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -390,135 +410,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="created Quiz file for week 3 and move testcase to new structure" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_1/todo/todoTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_1/todo/View.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_1/todo/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_2/observable/View.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_2/allTests.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_2/todo/View.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_2/observable/observableTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_2/todo/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="88" column="12" lean-forward="true" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_3/observable/View.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_3/observable/observableTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_3/observable/observable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_3/todo/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_3/allTests.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_2/observable/observable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week5/Quiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_0/todo/todoTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_0/todo/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Milestone_2/todo/todoTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week10/Milestone_5/todo/todoTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week10/Milestone_5/observable/observable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="44" column="2" lean-forward="true" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week10/Milestone_5/todo/todo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -541,44 +432,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week6/Quiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week10/Quiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="948">
-          <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week9/Quiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1190">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week11/live/live.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week11/util/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week12/Goodie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week11/live/liveTest.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/week12/todo/todo.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -601,20 +460,6 @@
     <entry file="file://$PROJECT_DIR$/week12/todo/View.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week8/Quiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week7/Quiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="69" selection-end-column="6" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week12/util/test.js">
@@ -687,15 +532,186 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week12/Quiz.html">
+    <entry file="file://$PROJECT_DIR$/week8/allTests.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week11/util/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="-190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week11/live/liveTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week11/live/live.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week12/AllTests.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/observable/observable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/util/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week8/allTests.html">
+    <entry file="file://$PROJECT_DIR$/week13/mod/mod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/allModuleTestsBundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2265" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/mod/modTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="17" column="103" selection-start-line="17" selection-start-column="103" selection-end-line="17" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/allModuleTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#96#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/excel/excel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/allModuleTests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/excel/excelTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#50#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/dataflow/dataflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/Goodie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week4/AllTests.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week12/Quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week11/allTests.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/Quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1371">
+          <caret line="121" column="46" selection-start-line="121" selection-start-column="46" selection-end-line="121" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week9/Quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week6/Quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week4/lambda/lambdaQuiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week5/Quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/lambda/lambdaQuiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/functionsTest.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/scopeTest.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week7/Quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week8/Quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/Quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

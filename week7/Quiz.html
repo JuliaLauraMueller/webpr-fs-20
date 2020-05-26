@@ -7,8 +7,6 @@
 <body>
 <script>
 
-    document.writeln("------------------------------");
-
     document.writeln("Quiz Week 7:");
 
    //  class Person {
@@ -51,20 +49,7 @@
     const add = (x, y) => x + y;
     const mult = (x, y) => x * y;
 
-
-    // Funktion
-    // const then = x => inc(double(x));
-    //const plusOneTimesTwo = x => timestwo(plusOne(x));
-    const compose = f => g => x => g(f(x));
-
-    //Function.prototype.then = f => g => x => f(g(x));
-
-    // Function.prototype.then = function (x) {
-    //     //return this.bind( (func, func2) => func(func2(x)))
-    //     //return this.bind( func => func + x)
-    //     return this.bind( func => func(x))
-    // }
-
+    // Funktion mit .then
     Function.prototype.then = function (fn) {
         return x => fn(this(x));
     };
@@ -76,13 +61,7 @@
     document.writeln(inc.then(double).then(double) (1) === 8);
     document.writeln(add.then(mult).then(add) (1) === (1 + add_) * factor_ + add_);
 
-    // Test Array
-   // Array.prototype.eqTest = function ( array ) {
-   //     return this.length == array.length &&
-   //         // this.map(function (element, index) {return element === array[index]}) &&
-   //        this.every( function(this_element,index) { return this_element == array[index] } )
-   // }
-
+   // Funktion Array Equals
    Array.prototype.eq = function (array) {
        return this.length === array.length &&
                this.every( (element, index) => element === array[index])
@@ -90,12 +69,11 @@
 
    let xs = [0,1,2,2];
    let ys = [0,1,2,2];
-   document.writeln("Equal :" + xs.eq(ys));
+   document.writeln("Equal-Assignment :" + xs.eq(ys));
 
    Number.prototype.times = function (callback) {
        return Array.from( {length: this}).map( (element, index) => callback(index));
    }
-
 
 </script>
 </body>

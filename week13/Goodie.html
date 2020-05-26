@@ -7,7 +7,13 @@
 
 
 <script>
+    // match, replace, split
 
+    const pattern2 = /(\w+)\s+\1/ig; //+ mind einer, s sind space character. Auf Gruppe beziehen mit 1.
+    const pattern = /abc/i; // Objekt von Typ RegExp-Pattern, mehr als ein String, Endlicher Automat. i:ignore case of capitalletter
+    document.writeln("Ich  kenne das das ABC!".match(pattern2));
+    document.writeln("Ich  kenne das das ABC!".replace(pattern2, "$1"));
+    document.writeln("Ich  kenne das das ABC!".split(pattern2));
 
 
 </script>
