@@ -2,25 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b594a230-b09a-493a-b8b2-bca1c7ddf65c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/week13/Quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week10/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week10/Quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week12/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week12/Quiz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/allTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/allTestsAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/allTestsSuite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/allTestsSuiteBundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/asyncStarter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/build-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/church/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/church/church.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/church/churchTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/church/rock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/church/rockTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/church/ski.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/concept/concept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/concept/conceptTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/dataflow/dataflow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/dataflow/dataflowTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/excel/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/excel/excel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/excel/excelTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/gauge/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/gauge/gauge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/gauge/gaugeTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/inheritance/inheritanceTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/lazy/lazy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/lazy/lazyTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/mod/mod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/mod/modTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/object/objectTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/observable/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/observable/observable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/observable/observableTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/oopsie/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/oopsie/oopsie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/oopsie/oopsieTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/person/Person.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/person/PersonTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/plotter/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/plotter/plotter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/plotter/plotterTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/snake/snake.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/snake/snake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/snake/snakeTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/todo/View.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/todo/fortuneService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/todo/todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/todo/todoTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/util/strings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/util/stringsTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/util/times.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/util/timesTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week13/Goodie.html" beforeDir="false" afterPath="$PROJECT_DIR$/week13/Goodie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week13/allModuleTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/week13/allModuleTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week13/allModuleTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/allModuleTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week13/dataflow/dataflow.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/dataflow/dataflow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week13/allModuleTestsBundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/allModuleTestsBundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week13/excel/excel.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/excel/excel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week13/excel/excelTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/excel/excelTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week13/mod/mod.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/mod/mod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week13/mod/modTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/week13/mod/modTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/lambda/lambdaQuiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week3/lambda/lambdaQuiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week5/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week5/Quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week6/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week6/Quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week7/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week7/Quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week8/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week8/Quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week9/Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/week9/Quiz.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +70,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week13/Quiz.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week13/Goodie.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -46,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/week8/Quiz.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="428">
-              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -98,13 +144,9 @@
         <option value="$PROJECT_DIR$/week12/dataflow/dataflow.js" />
         <option value="$PROJECT_DIR$/week12/dataflow/quiz_df.html" />
         <option value="$PROJECT_DIR$/week12/todo/Quiz.html" />
-        <option value="$PROJECT_DIR$/week13/Goodie.html" />
         <option value="$PROJECT_DIR$/week13/allModuleTests.html" />
         <option value="$PROJECT_DIR$/week13/mod/mod.js" />
         <option value="$PROJECT_DIR$/week13/mod/modTest.js" />
-        <option value="$PROJECT_DIR$/week13/allModuleTests.js" />
-        <option value="$PROJECT_DIR$/week13/excel/excel.js" />
-        <option value="$PROJECT_DIR$/week13/excel/excelTest.js" />
         <option value="$PROJECT_DIR$/week13/dataflow/dataflow.js" />
         <option value="$PROJECT_DIR$/week13/Quiz.html" />
         <option value="$PROJECT_DIR$/week12/Quiz.html" />
@@ -116,6 +158,10 @@
         <option value="$PROJECT_DIR$/week5/Quiz.html" />
         <option value="$PROJECT_DIR$/week4/lambda/lambdaQuiz.html" />
         <option value="$PROJECT_DIR$/week3/lambda/lambdaQuiz.html" />
+        <option value="$PROJECT_DIR$/week13/excel/excel.js" />
+        <option value="$PROJECT_DIR$/week13/excel/excelTest.js" />
+        <option value="$PROJECT_DIR$/week13/allModuleTests.js" />
+        <option value="$PROJECT_DIR$/week13/Goodie.html" />
       </list>
     </option>
   </component>
@@ -136,6 +182,17 @@
             <path>
               <item name="webpr-fs-20" type="b2602c69:ProjectViewProjectNode" />
               <item name="webpr-fs-20" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webpr-fs-20" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webpr-fs-20" type="462c0819:PsiDirectoryNode" />
+              <item name="week13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webpr-fs-20" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webpr-fs-20" type="462c0819:PsiDirectoryNode" />
+              <item name="week13" type="462c0819:PsiDirectoryNode" />
+              <item name="excel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,7 +349,7 @@
       <workItem from="1590160674356" duration="14000" />
       <workItem from="1590493080031" duration="4679000" />
       <workItem from="1590498056915" duration="903000" />
-      <workItem from="1590504346530" duration="1423000" />
+      <workItem from="1590504346530" duration="1669000" />
     </task>
     <task id="LOCAL-00001" summary="solved snake-game">
       <created>1582140952691</created>
@@ -326,7 +383,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121942000" />
+    <option name="totallyTimeSpent" value="122188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,6 +396,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8404727" visible="true" weight="0.24555735" />
       <window_info id="Structure" order="1" sideWeight="0.15952733" side_tool="true" weight="0.18659128" />
@@ -582,23 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week13/allModuleTests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#96#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week13/excel/excel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week13/allModuleTests.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -606,28 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week13/excel/excelTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#50#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week13/dataflow/dataflow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-45">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week13/Goodie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -702,14 +725,45 @@
     <entry file="file://$PROJECT_DIR$/week8/Quiz.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/excel/excel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/excel/excelTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#50#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/allModuleTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week13/Quiz.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week13/Goodie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>

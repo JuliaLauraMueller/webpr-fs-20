@@ -1,7 +1,8 @@
 // requires ../util/test.js
 // requires excel.js
 
-import {startExcel, refresh} from './excel.js'
+import {startExcel, refresh } from "./excel.js"
+
 import { Suite } from "../util/test.js";
 
 export const excelSuite = Suite("excel");
